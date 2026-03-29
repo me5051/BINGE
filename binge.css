@@ -2,6 +2,12 @@
    BINGE XPERIENCE — binge.css
    ============================================================ */
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+
 :root {
   --purple: #6a0fd4;
   --purple-light: #9b4dff;
