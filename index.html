@@ -317,29 +317,32 @@
 
         <div class="contact-form-wrap reveal delay-2">
           <div class="form-title">Send a <span>Message</span></div>
-          <div class="form-group">
-            <label class="form-label">Your Name</label>
-            <input class="form-input" type="text" placeholder="e.g. Chukwuemeka" required />
-          </div>
-          <div class="form-group">
-            <label class="form-label">Email Address</label>
-            <input class="form-input" type="email" placeholder="you@email.com" required />
-          </div>
-          <div class="form-group">
-            <label class="form-label">What's up?</label>
-            <select class="form-input" required>
-              <option value="" disabled selected>Select a topic</option>
-              <option>Sponsorship</option>
-              <option>General Enquiry</option>
-              <option>Tickets</option>
-              <option>Collaboration</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Message</label>
-            <textarea class="form-textarea" placeholder="Tell us what's on your mind..." required></textarea>
-          </div>
-          <a href="mailto:bingefests@gmail.com?subject=Message from Binge Website" class="form-submit">Send It 🚀</a>
+          <form id="contact-form">
+            <div class="form-group">
+              <label class="form-label">Your Name</label>
+              <input class="form-input" type="text" id="name" placeholder="e.g. Chukwuemeka" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address</label>
+              <input class="form-input" type="email" id="email" placeholder="you@email.com" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">What's up?</label>
+              <select class="form-input" id="topic" required>
+                <option value="" disabled selected>Select a topic</option>
+                <option value="Sponsorship">Sponsorship</option>
+                <option value="General Enquiry">General Enquiry</option>
+                <option value="Tickets">Tickets</option>
+                <option value="Collaboration">Collaboration</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea class="form-textarea" id="message" placeholder="Tell us what's on your mind..."
+                required></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send It 🚀</button>
+          </form>
         </div>
 
       </div>

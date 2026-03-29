@@ -24,3 +24,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+// ── CONTACT FORM ──
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const topic = document.getElementById('topic').value;
+  const message = document.getElementById('message').value;
+
+  const mailto = `mailto:bingefests@gmail.com?subject=${encodeURIComponent(topic + ' - from ' + name)}&body=${encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message)}`;
+
+  window.location.href = mailto;
+});
