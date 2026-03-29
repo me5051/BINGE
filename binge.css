@@ -1345,3 +1345,38 @@ footer {
   /* ── FOOTER ── */
   footer { flex-direction: column; text-align: center; }
 }
+
+@media (max-width: 900px) {
+  html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  #hero {
+    overflow: hidden;
+  }
+
+  .wiggle {
+    display: none;
+  }
+
+  .past-scroll-outer {
+    width: 100%;
+    left: 0;
+    transform: none;
+    padding: 0 1.2rem;
+    overflow: hidden;
+  }
+
+  .past-scroll {
+    overflow-x: hidden;
+  }
+
+  .ticker-bar {
+    overflow: hidden;
+  }
+
+  .gallery-mosaic {
+    overflow: hidden;
+  }
+}
