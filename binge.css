@@ -1101,7 +1101,7 @@ section {
   background: rgba(255, 208, 0, 0.08);
 }
 
-.contact-form-wrap {}
+/*.contact-form-wrap {} */
 
 .form-title {
   font-family: 'Lilita One', cursive;
@@ -1279,71 +1279,63 @@ footer {
 
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
-  nav {
-    padding: 1rem 1.5rem;
-  }
+  nav { padding: 1rem 1.5rem; }
+  .nav-links { display: none; }
 
-  .nav-links {
-    display: none;
-  }
+  section { padding: 4rem 1.2rem; }
 
-  section {
-    padding: 5rem 1.5rem;
-  }
+  .section-wrap { width: 100%; overflow: hidden; }
 
-  .about-grid,
-  .contact-grid,
-  .upcoming-grid {
+  /* ── ABOUT ── */
+  .about-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
+  .about-body { font-size: 0.95rem; }
 
+  /* ── STATS ── */
+  .about-visual {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+  }
+  .stat-card:nth-child(2) { margin-top: 0; }
+  .stat-card:nth-child(4) { margin-top: 0; }
+  .stat-num { font-size: 2.2rem; }
+
+  /* ── GALLERY ── */
   .gallery-mosaic {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 140px;
   }
+  .gp:nth-child(1) { grid-column: 1/2; grid-row: auto; }
+  .gp:nth-child(2) { grid-column: 2/3; grid-row: auto; }
+  .gp:nth-child(3) { grid-column: 1/2; grid-row: auto; }
+  .gp:nth-child(4) { grid-column: 2/3; grid-row: auto; }
+  .gp:nth-child(5) { grid-column: 1/2; grid-row: auto; }
+  .gp:nth-child(6) { grid-column: 2/3; grid-row: auto; }
+  .gp:nth-child(7) { grid-column: 1/2; grid-row: auto; }
+  .gp:nth-child(8) { grid-column: 2/3; grid-row: auto; }
 
-  .gp:nth-child(1) {
-    grid-column: 1/4;
-    grid-row: 1/3;
+  /* ── PAST EVENTS ── */
+  .past-card {
+    grid-template-columns: 1fr;
   }
+  .past-card-img {
+    height: 200px;
+    min-height: unset;
+  }
+  .past-card-body { padding: 1rem; }
+  .past-card-title { font-size: 1.2rem; }
+  .past-card-desc { font-size: 0.82rem; }
 
-  .gp:nth-child(2) {
-    grid-column: 4/7;
-    grid-row: 1/2;
-  }
+  /* ── UPCOMING ── */
+  .upcoming-grid { grid-template-columns: 1fr; }
+  .event-feature { min-height: 400px; padding: 1.5rem; }
+  .ef-title { font-size: 1.8rem; }
 
-  .gp:nth-child(3) {
-    grid-column: 4/7;
-    grid-row: 2/3;
-  }
+  /* ── CONTACT ── */
+  .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
 
-  .gp:nth-child(4) {
-    grid-column: 1/4;
-    grid-row: 3/5;
-  }
-
-  .gp:nth-child(5) {
-    grid-column: 4/7;
-    grid-row: 3/4;
-  }
-
-  .gp:nth-child(6) {
-    grid-column: 4/7;
-    grid-row: 4/5;
-  }
-
-  .gp:nth-child(7) {
-    grid-column: 1/4;
-    grid-row: 5/6;
-  }
-
-  .gp:nth-child(8) {
-    grid-column: 4/7;
-    grid-row: 5/6;
-  }
-
-  footer {
-    flex-direction: column;
-    text-align: center;
-  }
+  /* ── FOOTER ── */
+  footer { flex-direction: column; text-align: center; }
 }
