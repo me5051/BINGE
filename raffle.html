@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Binge Xperience — Raffle Draw</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;600;800&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="images/letterhead.png" type="image/png" href="binge-logo.png" />
+  <link rel="stylesheet" href="raffle.css" />
+</head>
+
+<body>
+
+  <div class="bg-glow"></div>
+  <div class="dots-bg"></div>
+
+  <!-- HEADER -->
+  <header>
+    <a href="index.html" class="back-link">← Back to Site</a>
+    <div class="page-eyebrow">// Time of Our Lives · 24 May 2026</div>
+    <h1 class="page-title">🎰 Raffle <span>Draw</span></h1>
+    <p class="page-sub">5 lucky ticket holders win a Binge goodie bag</p>
+  </header>
+
+  <!-- WINNERS BOARD -->
+  <div class="winners-board">
+    <div class="winners-title">
+      🏆 Winners
+      <span class="winner-count" id="winnerCount">0 / 5</span>
+    </div>
+    <div class="winners-list" id="winnersList">
+      <span class="no-winners">No winners yet — spin to start!</span>
+    </div>
+  </div>
+
+  <!-- WHEEL -->
+  <div class="wheel-section">
+    <div class="wheel-wrap">
+      <div class="wheel-pointer"></div>
+      <canvas id="wheel"></canvas>
+    </div>
+    <button class="spin-btn" id="spinBtn" onclick="spinWheel()">SPIN IT 🎯</button>
+    <button class="reset-btn" onclick="resetDraw()">↺ Reset Draw</button>
+  </div>
+
+  <!-- ALL DONE -->
+  <div class="all-done" id="allDone">
+    <div class="all-done-title">🎉 All 5 Winners Picked!</div>
+    <div class="all-done-sub">The raffle draw is complete. Congratulations to all winners!</div>
+  </div>
+
+  <!-- RESULT POPUP -->
+  <div class="result-overlay" id="resultOverlay">
+    <div class="result-card">
+      <span class="result-emoji">🎉</span>
+      <div class="result-label">Winner!</div>
+      <div class="result-id" id="resultId"></div>
+      <div class="result-sub">Ticket ID <strong id="resultIdSmall"></strong> wins a <strong>Binge Goodie Bag!</strong>
+        🎁</div>
+      <button class="result-close" onclick="closeResult()">Next Spin →</button>
+    </div>
+  </div>
+
+  <script src="raffle.js"></script>
+</body>
+
+</html>
