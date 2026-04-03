@@ -72,7 +72,7 @@ const COLORS = [
   '#ff7a00', '#6a0fd4', '#3ddc5b', '#4dc8ff', '#ff2d78',
 ];
 
-const MAX_WINNERS = 5;
+const MAX_WINNERS = 10;
 let tickets = [...allTickets];
 let winners = [];
 let spinning = false;
