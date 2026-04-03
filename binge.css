@@ -2,7 +2,8 @@
    BINGE XPERIENCE — binge.css
    ============================================================ */
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   max-width: 100%;
 }
@@ -577,11 +578,11 @@ section {
 }
 
 .stat-card:nth-child(2) {
-  margin-top: 1.5rem;
+  margin-top: 0rem;
 }
 
 .stat-card:nth-child(4) {
-  margin-top: -1.5rem;
+  margin-top: 0rem;
 }
 
 .stat-num {
@@ -1226,9 +1227,12 @@ footer {
   font-family: 'Lilita One', cursive;
   font-size: 1.5rem;
   color: var(--yellow);
-  text-shadow: 0 0 15px rgba(255,208,0,0.4);
+  text-shadow: 0 0 15px rgba(255, 208, 0, 0.4);
 }
-.footer-brand span { color: var(--purple-light); }
+
+.footer-brand span {
+  color: var(--purple-light);
+}
 
 /* ── ANIMATIONS ── */
 @keyframes popIn {
@@ -1285,69 +1289,150 @@ footer {
 
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
-  nav { padding: 1rem 1.5rem; }
-  .nav-links { display: none; }
+  nav {
+    padding: 1rem 1.5rem;
+  }
 
-  section { padding: 4rem 1.2rem; }
+  .nav-links {
+    display: none;
+  }
 
-  .section-wrap { width: 100%; overflow: hidden; }
+  section {
+    padding: 4rem 1.2rem;
+  }
+
+  .section-wrap {
+    width: 100%;
+    overflow: hidden;
+  }
 
   /* ── ABOUT ── */
   .about-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
-  .about-body { font-size: 0.95rem; }
+
+  .about-body {
+    font-size: 0.95rem;
+  }
 
   /* ── STATS ── */
   .about-visual {
     grid-template-columns: 1fr 1fr;
     gap: 0.8rem;
   }
-  .stat-card:nth-child(2) { margin-top: 0; }
-  .stat-card:nth-child(4) { margin-top: 0; }
-  .stat-num { font-size: 2.2rem; }
+
+  .stat-card:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .stat-card:nth-child(4) {
+    margin-top: 0;
+  }
+
+  .stat-num {
+    font-size: 2.2rem;
+  }
 
   /* ── GALLERY ── */
   .gallery-mosaic {
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 140px;
   }
-  .gp:nth-child(1) { grid-column: 1/2; grid-row: auto; }
-  .gp:nth-child(2) { grid-column: 2/3; grid-row: auto; }
-  .gp:nth-child(3) { grid-column: 1/2; grid-row: auto; }
-  .gp:nth-child(4) { grid-column: 2/3; grid-row: auto; }
-  .gp:nth-child(5) { grid-column: 1/2; grid-row: auto; }
-  .gp:nth-child(6) { grid-column: 2/3; grid-row: auto; }
-  .gp:nth-child(7) { grid-column: 1/2; grid-row: auto; }
-  .gp:nth-child(8) { grid-column: 2/3; grid-row: auto; }
+
+  .gp:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: auto;
+  }
+
+  .gp:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: auto;
+  }
+
+  .gp:nth-child(3) {
+    grid-column: 1/2;
+    grid-row: auto;
+  }
+
+  .gp:nth-child(4) {
+    grid-column: 2/3;
+    grid-row: auto;
+  }
+
+  .gp:nth-child(5) {
+    grid-column: 1/2;
+    grid-row: auto;
+  }
+
+  .gp:nth-child(6) {
+    grid-column: 2/3;
+    grid-row: auto;
+  }
+
+  .gp:nth-child(7) {
+    grid-column: 1/2;
+    grid-row: auto;
+  }
+
+  .gp:nth-child(8) {
+    grid-column: 2/3;
+    grid-row: auto;
+  }
 
   /* ── PAST EVENTS ── */
   .past-card {
     grid-template-columns: 1fr;
   }
+
   .past-card-img {
     height: 200px;
     min-height: unset;
   }
-  .past-card-body { padding: 1rem; }
-  .past-card-title { font-size: 1.2rem; }
-  .past-card-desc { font-size: 0.82rem; }
+
+  .past-card-body {
+    padding: 1rem;
+  }
+
+  .past-card-title {
+    font-size: 1.2rem;
+  }
+
+  .past-card-desc {
+    font-size: 0.82rem;
+  }
 
   /* ── UPCOMING ── */
-  .upcoming-grid { grid-template-columns: 1fr; }
-  .event-feature { min-height: 400px; padding: 1.5rem; }
-  .ef-title { font-size: 1.8rem; }
+  .upcoming-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-feature {
+    min-height: 400px;
+    padding: 1.5rem;
+  }
+
+  .ef-title {
+    font-size: 1.8rem;
+  }
 
   /* ── CONTACT ── */
-  .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
 
   /* ── FOOTER ── */
-  footer { flex-direction: column; text-align: center; }
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 @media (max-width: 900px) {
-  html, body {
+
+  html,
+  body {
     overflow-x: hidden;
     max-width: 100%;
   }
